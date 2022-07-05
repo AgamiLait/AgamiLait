@@ -1,0 +1,58 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ (встроенных стилей) */
+*,/* всем объектам */
+*::before,/* псевдоэлементов всех объектов before*/
+*::after { /* псевдоэлементов всех объектов after*/
+	margin: 0;/* внешний отступ */
+	padding: 0;/* внутренний отступ */
+	border: 0;/* границу */
+}
+li { /* ко всем спискам */
+	list-style: none;/* нумерованные стили и т.д. */
+}
+a,/* к ссылкам  */
+a:visited {
+	text-decoration: none; /* убираем у них подчеркивание */
+}
+a:hover {
+	text-decoration: none;
+}
+h1,/* ко всем заголовкам */
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit; /* размеры */
+	font-size: inherit;
+}
+img {/* к картинке */
+	vertical-align: top;/* полоса проподает */
+	/* display: block; можно и так но потеярет свои инлайновые способности, будем пользоваться в дальнейшем  */
+}
+
+/* --------------- */
+
+header p{
+	color: aqua;
+}
+
+.gog{
+	color: blue;
+}
+
+nav *{
+	color: blueviolet;
+}
+
+.content .text_content{
+	color: brown;
+}
+
+div ~ *{
+	color: coral;
+}
+
+.for .h3_for,
+.for .p_for{
+	color: cyan;
+}
