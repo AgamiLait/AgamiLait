@@ -1,0 +1,117 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 20px;
+}
+/* ------------------------------ */
+/* Сделать из блока круг размером 200 на 200px */
+.won{
+	background-color:aqua;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	padding: 50px;
+	margin-bottom: 20px;
+}
+
+/* Добавить в див три параграфа и сделать все вместе прозрачным на 50% */
+.parag{
+	
+	background-color:blue;
+	opacity: 0.5;
+	margin-bottom: 20px;
+}
+
+/* Сделать ровную границу для спана с текстом */
+.span{
+	display: inline-block;
+	background-color: blueviolet;
+	font-size: 20px;
+	border:2px solid black;
+	margin: 25px;
+}
+
+/* Сделать блок с 4мя разными границами. */
+.four{
+	padding: 50px;
+	border-bottom:2px solid black;
+	border-right:2px dotted black ;
+	border-left:2px dashed black ;
+	border-top:10px double black ;
+	margin-bottom: 20px;
+}
+/* Сделать ссылку с тенью */
+a{
+	display: inline-block;
+	background-color:rgb(134, 165, 42);
+	margin: 5px;
+	font-size: 50px;
+	box-shadow:30px 30px 100px 50px yellow;
+}
+
+
+
+.j{
+	display: inline-block;
+	background-color:blue;
+	width: 250px;
+	max-height: 500px;
+	padding: 20px;
+	font-size: 40px;
+	margin: 5px;
+	overflow:auto;
+	
+}
+
+.blok{
+	max-width: 800px;
+	font-size: 0;
+	margin: 0px auto;
+}
