@@ -1,0 +1,241 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	overflow-x: hidden;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+}
+/* ------------------------------ */
+
+.block {
+	/* По умолчанию */
+	/* position: static; */
+	/*
+	top
+	left 
+	right
+	bottom
+	z-index
+	*/
+}
+.block__item {
+	padding: 15px;
+	color: #fff;
+	font-size: 20px;
+}
+.block__item_color-brown {
+	background-color: #794f45;
+}
+.block__item_color-purple {
+	background-color: #77608d;
+}
+.block__item_color-green {
+	background-color: #7a956b;
+}
+
+/* -------------- */
+
+/*Позиционирование работает для всех объектов как и для блоков так и для строк.
+ Статичное положение объекта (по умолчанию) */
+/* top,left,right,bottom,z-index - не работают */
+/* position: static; */
+
+/* -------------- */
+
+/*
+position: relative;
+ДЛЯ бэм блоков используем, все другие ниже позиционирование не работают для бэма т.к.  влияют на окружения  
+ОТНОСИТЕЛЬНОЕ ПОЛОЖЕНИЯ
+Положение элемента устанавливается относительно 
+его исходного(начального) положения в коде. 
+Добавление свойств left, top, right и bottom изменяет 
+позицию элемента и сдвигает его в ту или иную сторону 
+от первоначального расположения.
+или px или % - от размера объекта.Вертикальные свойства в процентах работает если есть места куда сдвигаться*/
+/* top,left,right,bottom,z-index - работают */
+/* position: relative; 
+z-index auto - по умолчанию.В момент перкключения со статик на релатив то он становиться более значимым в коде. При прочих равных работает положения в коде(чем ниже чем более сверху).z-index 2 -   чем выше значения чем выше приоритет.Объекты начинают сравниваться по уровню вложаности (объекты первого уровня и т.д.).*/
+
+/* -------------- */
+/*
+position: absolute;
+Обчно используеться там где контент не меняеться в процессе
+Элемент якобы вырывается из кода и зависайт в воздухе. 
+Он перестает влиять на остальные элементы. 
+Добавление свойств left, top, right и bottom 
+изменяет позицию элемента и сдвигает его 
+в ту или иную сторону относительно родителя 
+у которого задан параметр position: relative;
+1) Объект теряет свое "тело", и зависает в воздухе.
+2) Другие объекты занимают его место
+3) Объект превращается в строчный, тоесть 
+размер зависит от контента в нем
+4) Объект позиционируется обносительно первого родителя,
+для которого указано position: relative;
+5) Необходимо сопровождать свойствами top,left,right,bottom
+
+/* top,left,right,bottom,z-index - работают */
+/* position: absolute; */
+
+/* -------------- */
+
+/*
+position: fixed;
+Он не скролиться вместе с контентам.
+Элемент якобы вырывается из кода и зависайт в воздухе. 
+Фиксируется, то есть не скролится вместе с содержимым. 
+Он перестает влиять на остальные элементы. 
+Добавление свойств left, top, right и bottom изменяет позицию элемента 
+и сдвигает его в ту или иную сторону относительно окна браузера.
+position: fixed;
+1) Объект теряет свое "тело", и зависает в воздухе.
+2) Другие объекты занимают его место
+3) Объект превращается в строчный, тоесть 
+размер зависит от контента в нем
+4) Объект позиционируется обносительно окна браузера
+5) Необходимо сопровождать свойствами top,left,right,bottom
+
+/* top,left,right,bottom,z-index - работают */
+/* position: fixed; */
+
+/* -------------- */
+
+/*
+position: sticky
+с overflow: hidden; в рапере он не работает.
+Это гибридное сочетание значений static и fixed. 
+Изначально єлемент ведет себя как static 
+но после того как скролл доходит до его границы он становиться 
+fixed и прилипает к указанной позиции top или bottom, а потом отлипает после конца всего блока.
+/* top,left,right,bottom,z-index - работают */
+/* position: sticky; */
+
+/* -------------- */
+
+/*
+Каждый элемент может находиться как ниже, 
+так и выше других объектов веб-страницы, 
+их размещением по z-оси и управляет z-index. 
+Это свойство работает только для элементов, 
+у которых значение position отличное от static.
+*/
+
+/* z-index: auto; */
+
+/* -------------- */
+/*
+ Свойства позиционирования,
+можно указавать px, %, другие ед.
+top
+left
+right
+bottom
+*/
+
+/* -------------- */
+
+/* Практика */
+/*
+.list {
+}
+.list__item {
+	position: relative;
+	padding: 0px 0px 0px 25px;
+}
+.list__item::before {
+	content: "";
+	background: url("../img/icon.png") 0 0 no-repeat;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -6px;
+	left: 0px;
+}
+.list__item:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
+.header {
+	background-color: #7a956b;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+.main {
+	padding: 30px 0px 0px 0px;
+}
+.image {
+	position: relative;
+	display: inline-block;
+}
+.image::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.image:hover::before {
+	opacity: 0;
+}
+.image__item {
+	width: 200px;
+}
+*/
+
+.test {
+	background: #f5f5f5;
+	padding: 110px 30px;
+	position: relative;
+	background: url("../img/blob.png") right -489px no-repeat;
+}

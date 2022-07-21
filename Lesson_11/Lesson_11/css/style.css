@@ -1,0 +1,142 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext');
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	overflow-x: hidden;
+	font-family: "Roboto", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+}
+/* ------------------------------ */
+
+.main {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+.main::before{
+	content: "";
+	position: absolute;
+	background: url(../img/main_abs.png) 0 0 no-repeat;
+	width: 201px;
+	height: 317px;
+	top: 610px;
+	left: 1270px;
+	z-index: 2;
+}
+
+.blok::before{
+	content: "";
+	position: absolute;
+	background: url(../img/back.png) 0 no-repeat;
+	width: 665px;
+	height: 591px;
+	top: 260px;
+	left: -30px;
+}
+
+.blok {
+	width: 1020px;
+	margin: 0 auto;
+	background: #5D62B5;
+	border-radius: 40px;
+	padding: 100px 87px 354px 87px;
+	position: relative;
+	top: -76px;
+}
+.blok-title {
+	position: relative;
+	padding-left: 33px;
+}
+.blok-title__text {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	margin-bottom: 34px;
+}
+
+.blok-title__text::before{
+	content: "";
+	background: url(../img/icon.png) 0 0 no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: -2px;
+	left: -8px;
+}
+
+.blok__text {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+	width: 583px;
+	margin-bottom: 36px;
+}
+.blok__text2 {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #F5F5F5;
+
+}
+.img-dog {
+	margin: 0 auto;
+	width: 846px;
+	position: relative;
+	top: -370px;
+}
+.img-dog__pic {
+	border-radius: 40px;
+	margin-bottom: 100px;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+
+}
