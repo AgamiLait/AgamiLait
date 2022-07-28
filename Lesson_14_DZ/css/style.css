@@ -1,0 +1,215 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	font-family: "Roboto", sans-serif;
+	background-color: #333;
+}
+.wrapper {
+	min-height: 100%;
+	padding: 30px;
+	overflow: hidden;
+	background: #F5F5F5;
+}
+/* ------------------------------ */
+.main{
+	display: flex;
+	justify-content: center;
+	width: 1440px;
+}
+
+.block {
+	display:flex;
+	width: 1020px;
+	flex-direction: column;
+}
+.block__our {
+	
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	margin-bottom:  33px;
+	letter-spacing: 2.5px;
+}
+.block__our::before{
+	content: "";
+	background: url(../img/Overline_1.png) 0 0px no-repeat;
+	width: 17px;
+	height: 18px;
+	margin-right: 16px;
+	display: inline-flex;
+	position: relative;
+	top: 1px;
+}
+.block__sed {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin-bottom: 68px;
+}
+
+.block-three__one {
+	display: inline-flex;
+	justify-content: space-between;
+	
+}
+.block-element {
+	width: 235px;
+}
+.block-element__text {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin-bottom: 20px;
+}
+
+.block-element__text2 {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+
+.f{
+	display: inline-flex;
+	margin-right: 23px;
+	align-self:flex-start;
+}
+
+.block-element:not(:last-child){
+	margin-right: 24px;
+}
+/* __________________________________________ */
+.block-dog {
+	display: flex;
+	background:#29C3BE url(../img/dog/Blob__2.png) 600px 0px no-repeat;
+	width: 1440px;
+	justify-content: center;
+	margin-left: -210px;
+	padding: 112px 210px 212px 210px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+}
+
+.pick{
+	position: relative;
+	width: 498px;
+	height: 315px;
+	transform: translate(500px, 240px);
+	z-index: 2;
+	border-radius: 40px;
+}
+
+.block-dog__our {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #FFFFFF;
+	margin-bottom: 33px;
+}
+
+.block-dog__our::before{
+	content: "";
+	display: inline-flex;
+	background: url(../img/dog/Overline__1.png) 0 0 no-repeat;
+	width: 18px;
+	height: 19px;
+	position: relative;
+	top: 1px;
+	margin-right: 16px;
+}
+
+.block-dog__nemo {
+	width: 411px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin-bottom: 75px;
+}
+
+.tyn{
+	display: flex;
+	
+}
+
+.dog-block {
+	display: inline-flex;
+	width: 237px;
+}
+.dog-block__img {
+	padding-right: 11px;
+}
+.content-dog {
+}
+.content-dog__num {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin-bottom: 3px;
+}
+.content-dog__text {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #5D62B5;
+}
+
+.dog-block:not(:last-child){
+	margin-right: 24px;
+}
