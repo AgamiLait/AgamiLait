@@ -1,0 +1,147 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	/* font-size: 16px;  */
+}
+body {
+	line-height: 1;
+	color: #fff;
+	background-color: #333;
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	
+}
+/* ------------------------------ */
+.block-mack {
+	margin: 0 auto;
+	max-width: 585px;
+	padding: 76px 57px 76px 57px;
+	background: #5D62B5;
+	border-radius: 40px;
+	margin-bottom: 100px;
+}
+.block-mack__text {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 58px;
+}
+.block-four {
+	
+	
+}
+.block-four__items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -11px;
+}
+.items {
+	
+}
+.items__row {
+	flex:1 1 50% ;
+	padding: 11px;
+	min-width: 230px;
+}
+
+.f{
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	width: 224px;
+	height: 48px;
+	padding-left: 17px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	background: #5D62B5;
+}
+
+.f::placeholder{
+	color: #FFFFFF;
+}
+
+.ff::placeholder{
+	color: #FFFFFF;
+}
+
+.block-textarea {
+	margin-top: 22px;
+	margin-bottom: 30px;
+}
+
+.ff{
+	width: 100%;
+	height: 180px;
+	background: #5D62B5;
+	resize: vertical;
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+	padding: 17px 23px;
+	color: #FFFFFF;
+}
+
+.button {
+	display: flex;
+	justify-content: end;
+}
+
+.fff{
+	display: flex;
+	background: #F2726F;
+	border-radius: 8px;
+	padding: 9px 30px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	justify-content: end;
+}
